@@ -31,7 +31,7 @@ let weather = {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q="
             + city
-            + "&units=metric&appid="
+            + "&lang=sv&units=metric&appid="
             + this.apiKey
         )
             .then((response) => response.json())
@@ -47,15 +47,15 @@ let weather = {
 
         console.log(name, icon, description, temp, humidity, speed);
 
-        document.querySelector(".city").innerText = "Weather in " + name;
+        document.querySelector(".city").innerText = "Vädret i " + name;
 
         /* document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon +"@2x.png"; */
 
         document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon +".png";
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°C";
-        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind: " + speed + " m/s";
+        document.querySelector(".humidity").innerText = "Fuktighet: " + humidity + "%";
+        document.querySelector(".wind").innerText = "Vind: " + speed + " m/s";
     },
 
     search: function() {
