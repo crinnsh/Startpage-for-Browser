@@ -3,6 +3,7 @@
 
 For available languages, check the branches. <br/>
 
-Example of 'English' branch, https://imgur.com/a/07olLie (outdated image) <br/>
+![Example Image](https://i.imgur.com/TJBehvY.png)
+Example of 'English' branch (outdated image) <br/>
 
 ## This is purely a personal project and was made for learning.
