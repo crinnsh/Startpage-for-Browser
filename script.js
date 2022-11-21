@@ -164,10 +164,15 @@ function displayTime() {
 
     if(hrs >= 12) {
         session.innerHTML = "PM";
-
     }
     else{
         session.innerHTML = "AM";
+    }
+    if(hrs >= 13) {
+        hrs = hrs - 12;
+    }
+    else{
+        hrs = hrs;
     }
 
     document.getElementById("hours").innerHTML = hrs;
